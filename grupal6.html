@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Estadísticas - Te lo Vendo</title>
+
+    <!-- Agrega los enlaces CDN de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/css/bootstrap.min.css">
+
+    <!-- Agrega los enlaces CDN de DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.10/css/dataTables.bootstrap5.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.10/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.10/js/dataTables.bootstrap5.min.js"></script>
+
+</head>
+<body>
+    <!-- Barra de navegación (copia y pega el código de la barra de navegación que ya tienes) -->
+
+    <!-- Contenido principal -->
+    <div class="container mt-5">
+        <h1>Estadísticas</h1>
+        <table id="tablaEstadisticas" class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Ventas Totales</th>
+                    <th>Clientes Atendidos</th>
+                    <th>Ingresos Mensuales</th>
+                    <th>Valor Promedio por Pedido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí debes agregar filas con datos de estadísticas -->
+                <tr>
+                    <td>Producto 1</td>
+                    <td>50</td>
+                    <td>30</td>
+                    <td>$5,000</td>
+                    <td>$100</td>
+                </tr>
+                <!-- Agrega más filas según sea necesario -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Inicialización de DataTables -->
+    <script>
+        $(document).ready(function() {
+            $('#tablaEstadisticas').DataTable();
+        });
+    </script>
+</body>
+</html>
